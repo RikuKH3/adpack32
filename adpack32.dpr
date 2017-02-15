@@ -149,7 +149,7 @@ end;
 begin
   try
     Writeln('くるりアクティブ ADPACK32 Unpacker/Packer v1.1 by RikuKH3');
-    Writeln('----------------------------------------------------');
+    Writeln('---------------------------------------------------------');
     if ParamCount=0 then begin Writeln('Usage: '+ExtractFileName(ParamStr(0))+' <input file or folder>'); Readln; exit end;
     if Pos('.', ExtractFileName(ParamStr(1)))=0 then pack else unpack;
   except on E: Exception do begin Writeln('Error: '+E.Message); Readln; exit end end;
